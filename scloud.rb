@@ -1,3 +1,5 @@
+require 'formula'
+
 class Scloud < Formula
   desc "Splunk Cloud Platform CLI"
   homepage "https://github.com/splunk/scloud"

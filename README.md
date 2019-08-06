@@ -1,13 +1,10 @@
-# homebrew-tap
+# Splunk Homebrew Tap
 
-Splunk Homebrew Tap
+**splunk/homebrew-tap** is the repository for Splunk packages for Homebrew. For more about Homebrew, a package manager for for macOS and Linux, see the [Homebrew](https://brew.sh/) website.
 
-This is the repository for Splunk Homebrew packages. Homebrew is "the missing package manager for OS X" (https://brew.sh/).
+## Usage
 
-
-## Installation
-
-To register the Splunk tap
+To use the Splunk Homebrew tap, register it:
 
 ```
 brew tap splunk/tap
@@ -19,32 +16,33 @@ To list registered taps:
 brew tap 
 ```
 
-To install a package, like scloud:
+To install a package:
 
 ```
-brew install scloud
+brew install <package-name>
 ```
 or
 ```
-brew install splunk/tap/scloud
+brew install splunk/tap/<package-name>
 ```
 
-To uninstall a package, like scloud:
+To uninstall a package:
 
 ```
-brew uninstall scloud
+brew uninstall <package-name>
 ```
 
-To update to the latest version:
+To update a package to the latest version:
+
 ```
-brew upgrade scloud
+brew upgrade <package-name>
 ```
 
 
-## Available packages
+## Splunk packages for Homebrew
 
-| Package | Description                                     |
-|:------- |:----------------------------------------------- |
-| scloud  | The official Splunk Cloud Platform CLI (scloud) |
+| Package name | Description          |
+|:------------ |:-------------------- |
+| scloud       | The Splunk Cloud CLI |
 
 

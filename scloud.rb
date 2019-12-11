@@ -6,7 +6,7 @@ class Scloud < Formula
 
   if OS.mac?
     head "https://github.com/splunk/scloud.git"
-    url "https://github.com/splunk/splunk-cloud-sdk-go/releases/download/v1.0.1/scloud_v1.1.0rc_darwin_amd64.tar.gz"
+    url "https://github.com/splunk/splunk-cloud-sdk-go/releases/download/v1.1.0/scloud_v1.1.0rc_darwin_amd64.tar.gz"
     sha256 "06b406e62583947538b2f84c71b7434841272678d273dd93f4671501ccf1c4ed"
   elsif OS.linux?
     head "https://github.com/splunk/scloud.git"

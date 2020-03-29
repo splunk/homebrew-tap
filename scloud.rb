@@ -2,7 +2,7 @@ class Scloud < Formula
 
   desc "Splunk Cloud Platform CLI"
   homepage "https://github.com/splunk/scloud"
-  version "1.0.1"
+  version "2.0.0"
 
   if OS.mac?
     head "https://github.com/splunk/scloud.git"

@@ -44,5 +44,6 @@ brew upgrade <package-name>
 | Package name | Description          |
 |:------------ |:-------------------- |
 | scloud       | The Splunk Cloud CLI |
+| qbec       | A CLI tool that allows you to create Kubernetes objects on multiple Kubernetes clusters or namespaces configured correctly for the target environment in question |
 
 

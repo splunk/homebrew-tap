@@ -2,16 +2,16 @@ class Scloud < Formula
 
   desc "Splunk Cloud Platform CLI"
   homepage "https://github.com/splunk/scloud"
-  version "4.0.1"
+  version "5.0.0"
 
   if OS.mac?
     head "https://github.com/splunk/scloud.git"
-    url "https://github.com/splunk/splunk-cloud-sdk-go/releases/download/v1.8.0/scloud_v4.0.1_darwin_amd64.tar.gz"
-    sha256 "ae57cc4aa0225bac4597dfc7e4847d31782579dd904716786667eab479983c70"
+    url "https://github.com/splunk/splunk-cloud-sdk-go/releases/download/v1.9.0/scloud_v5.0.0_darwin_amd64.tar.gz"
+    sha256 "5c241b1e4e4db75a1cfc930bda59cadf62f4425288957903e5d3f809078af65b"
   elsif OS.linux?
     head "https://github.com/splunk/scloud.git"
-    url "https://github.com/splunk/splunk-cloud-sdk-go/releases/download/v1.8.0/scloud_v4.0.1_linux_amd64.tar.gz"
-    sha256 "65fbb8ff3d096e2537099f669122551a0ea43c2670ccbf60ba8f600c9801e0d6"
+    url "https://github.com/splunk/splunk-cloud-sdk-go/releases/download/v1.9.0/scloud_v5.0.0_linux_amd64.tar.gz"
+    sha256 "dd7674349d276d037baf2672f29c3e8a250b64976d85687c81d06f0ae7e973bc"
   end
 
   def install

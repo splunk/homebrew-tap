@@ -2,16 +2,16 @@
 class Qbec < Formula
   desc "Qbec (pronounced like the Canadian province) is a CLI tool that allows you to create Kubernetes objects on multiple Kubernetes clusters or namespaces configured correctly for the target environment in question."
   homepage "https://qbec.io/"
-  version "0.13.0"
+  version "0.13.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/splunk/qbec/releases/download/v0.13.0/qbec-darwin-amd64.tar.gz"
-    sha256 "3945e3ac60e55e66483efa454dc1befcbee3c5a65f56c85f82e14e704e983860"
+    url "https://github.com/splunk/qbec/releases/download/v0.13.1/qbec-darwin-amd64.tar.gz"
+    sha256 "22ea7ed7e05506cdf6439efd2b361d3eb8cd35fe212e4a6beaeb9c9286cac758"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/splunk/qbec/releases/download/v0.13.0/qbec-linux-amd64.tar.gz"
-    sha256 "972336f1b3582ec88c7684f9b4fc7b175c785239417bf2b5c2adba64ecfba749"
+    url "https://github.com/splunk/qbec/releases/download/v0.13.1/qbec-linux-amd64.tar.gz"
+    sha256 "4217c4a339616f9ab208f9233084db9b1676892dcd155c7b08990c9e7f83fd4b"
   end
 
   def install

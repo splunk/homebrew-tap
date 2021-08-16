@@ -5,28 +5,28 @@
 class Qbec < Formula
   desc "Qbec (pronounced like the Canadian province) is a CLI tool that allows you to create Kubernetes objects on multiple Kubernetes clusters or namespaces configured correctly for the target environment in question."
   homepage "https://qbec.io/"
-  version "0.14.5"
+  version "0.14.6"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/splunk/qbec/releases/download/v0.14.5/qbec-darwin-amd64.tar.gz"
-      sha256 "d8e715e15361997f1d0c19d188d4acacb8476e084bd632b32cd11db819fc12fd"
+      url "https://github.com/splunk/qbec/releases/download/v0.14.6/qbec-darwin-amd64.tar.gz"
+      sha256 "740db0b8de7e77531e3697e05a35e0bf8f2d56d1d3971222336a4930cd4190fd"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/splunk/qbec/releases/download/v0.14.5/qbec-darwin-arm64.tar.gz"
-      sha256 "577f03ec5cfb172b9df0b41e965f63a0f758553fabbd1c9efb96397d1b3c8392"
+      url "https://github.com/splunk/qbec/releases/download/v0.14.6/qbec-darwin-arm64.tar.gz"
+      sha256 "b0fa49c62a1ccc5d3cdc114985c763173c02855fdf94d45fd81f5a8eac0be937"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/splunk/qbec/releases/download/v0.14.5/qbec-linux-amd64.tar.gz"
-      sha256 "1dc11c5030a377a7e8145f5e4eb2b2283832f9c09ef6ddac0580f483f592c976"
+      url "https://github.com/splunk/qbec/releases/download/v0.14.6/qbec-linux-amd64.tar.gz"
+      sha256 "05645b30a5afaa665ffed1b327f550d829c2b76fa139271fdb6829f6e219b6dc"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/splunk/qbec/releases/download/v0.14.5/qbec-linux-arm64.tar.gz"
-      sha256 "2357dedd5b908fd4ca6ebdb44530c7994a3cdfae51106386a8a2f72c949e2322"
+      url "https://github.com/splunk/qbec/releases/download/v0.14.6/qbec-linux-arm64.tar.gz"
+      sha256 "aa216c952c7eacf829979678f48288506eb1f71928148180527afaa89d1c8cb5"
     end
   end
 

@@ -2,7 +2,7 @@ class Acs < Formula
 
   desc "Splunk Admin Config Service CLI"
   homepage "https://github.com/splunk/acs-cli"
-  version "2.0.0-beta.0"
+  version "v2.0.0-beta.0"
 
   if OS.mac?
     url "https://github.com/splunk/acs-cli/releases/download/v2.0.0-beta.0/acs_v2.0.0-beta.0_darwin_amd64.tar.gz"

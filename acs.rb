@@ -6,10 +6,10 @@ class Acs < Formula
 
   if OS.mac?
     url "https://github.com/splunk/acs-cli/releases/download/v2.0.0-beta.0/acs_v2.0.0-beta.0_darwin_amd64.tar.gz"
-    sha256 "96f7ef7ddaff7a06b05298d71b384cfbfd1b5fe335511fa89dd48230a0a2ef6c"
+    sha256 "0e27d53957f05e27e9f8b76de39e22dcd39f825f02b1d6d95358d9bad8c0d5e2"
   elsif OS.linux?
     url "https://github.com/splunk/acs-cli/releases/download/v2.0.0-beta.0/acs_v2.0.0-beta.0_linux_amd64.tar.gz"
-    sha256 "5c0c4cd4990e9381ab42cec26272eb27d48586841cb92aa07d1722b0a3610e78"
+    sha256 "ddd4ddc632cfbb1e9d1af7a1c0cefe5bffcc8c62917c1c01ab7a72c006e7ce88"
   end
 
   def install

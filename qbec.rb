@@ -32,9 +32,11 @@ class Qbec < Formula
 
   def install
     bin.install "qbec"
+    bin.install "jsonnet-qbec"
   end
 
   test do
     system "#{bin}/qbec version"
+    system "#{bin}/jsonnet-qbec --help"
   end
 end

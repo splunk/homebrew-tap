@@ -5,33 +5,44 @@
 class Qbec < Formula
   desc "Qbec (pronounced like the Canadian province) is a CLI tool that allows you to create Kubernetes objects on multiple Kubernetes clusters or namespaces configured correctly for the target environment in question."
   homepage "https://qbec.io/"
-  version "0.14.8"
-  bottle :unneeded
+  version "0.15.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/splunk/qbec/releases/download/v0.14.8/qbec-darwin-amd64.tar.gz"
-      sha256 "a3900e884e0f89177dcd83398b47ec6719ae41ca300cc4bd450c848e6c0c019c"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/splunk/qbec/releases/download/v0.14.8/qbec-darwin-arm64.tar.gz"
-      sha256 "9156dd995a46757959e9455160e5e8c009c8e6197bbf5481936b90770fd135c6"
+      url "https://github.com/splunk/qbec/releases/download/v0.15.0/qbec-darwin-arm64.tar.gz"
+      sha256 "98cb170f79b9273e6510bae02a5c4c434256a1f5675ac4934080a083ecb2d195"
+
+      def install
+        bin.install "qbec"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/splunk/qbec/releases/download/v0.15.0/qbec-darwin-amd64.tar.gz"
+      sha256 "40339c7370ee5e03e2db29f47d6d286f0444ecbed463be5963d86596506434e3"
+
+      def install
+        bin.install "qbec"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/splunk/qbec/releases/download/v0.14.8/qbec-linux-amd64.tar.gz"
-      sha256 "200d62bdd3f991d0342527722e122676efd747a98c294d86567d1ebb31361c1f"
+      url "https://github.com/splunk/qbec/releases/download/v0.15.0/qbec-linux-amd64.tar.gz"
+      sha256 "e1a5c59e6a07efc9d69ac8d58528c405c71551a5251030ae68b77d09223d037d"
+
+      def install
+        bin.install "qbec"
+      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/splunk/qbec/releases/download/v0.14.8/qbec-linux-arm64.tar.gz"
-      sha256 "6c1c3ac8c6ad65eda9154df921cae9dfeab364b99a96fdc04b473a5b66448a8b"
-    end
-  end
+      url "https://github.com/splunk/qbec/releases/download/v0.15.0/qbec-linux-arm64.tar.gz"
+      sha256 "b6493129c88e6e7fcf48baafa38b69a093a6a3b6897b8d4c2d150948d7d2b96e"
 
-  def install
-    bin.install "qbec"
+      def install
+        bin.install "qbec"
+      end
+    end
   end
 
   test do

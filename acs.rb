@@ -2,14 +2,14 @@ class Acs < Formula
 
   desc "Splunk Admin Config Service CLI"
   homepage "https://github.com/splunk/acs-cli"
-  version "2.10.0"
+  version "2.11.0"
 
   if OS.mac?
-    url "https://github.com/splunk/acs-cli/releases/download/v2.10.0/acs_v2.10.0_darwin_amd64.tar.gz"
-    sha256 "1965de85ceb9711887fc7cbd9af883ebd901e4ee53486b6fbb65f443c02d3cda"
+    url "https://github.com/splunk/acs-cli/releases/download/v2.11.0/acs_v2.11.0_darwin_amd64.tar.gz"
+    sha256 "80cb3ed35b6ffadf6296b6edccf2a4a9e21915fd48fe0109fb7d932591ac86a4"
   elsif OS.linux?
-    url "https://github.com/splunk/acs-cli/releases/download/v2.10.0/acs_v2.10.0_linux_amd64.tar.gz"
-    sha256 "b44302b1f41e3e73a43f276c13fad5c75d96381ede8332495f868777f5a6da3d"
+    url "https://github.com/splunk/acs-cli/releases/download/v2.11.0/acs_v2.11.0_linux_amd64.tar.gz"
+    sha256 "0a4c5cf4ee65c88a0e06c498cf3e217d3953d77569d3aed0335da346f9ebe35c"
   end
 
   def install

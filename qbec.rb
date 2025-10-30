@@ -5,20 +5,20 @@
 class Qbec < Formula
   desc "Qbec (pronounced like the Canadian province) is a CLI tool that allows you to create Kubernetes objects on multiple Kubernetes clusters or namespaces configured correctly for the target environment in question."
   homepage "https://qbec.io/"
-  version "0.23.0"
+  version "0.24.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/splunk/qbec/releases/download/v0.23.0/qbec-darwin-amd64.tar.gz"
-      sha256 "3e9ef835a631977158c1de0423ff38c2aa505a6661fce9d63011d434c558bd87"
+      url "https://github.com/splunk/qbec/releases/download/v0.24.0/qbec-darwin-amd64.tar.gz"
+      sha256 "3d223dfffa8848ff565ee60fab5edb343042e2968cfe99ea90855f3bac642217"
 
       def install
         bin.install "qbec"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/splunk/qbec/releases/download/v0.23.0/qbec-darwin-arm64.tar.gz"
-      sha256 "420cb913e4aeeaf08466d3c7d9c02ee6a73da1d595a21a7dd14fd348649adf85"
+      url "https://github.com/splunk/qbec/releases/download/v0.24.0/qbec-darwin-arm64.tar.gz"
+      sha256 "466a528faf192582ca7a0e5f6a5f0e8ff33504de842a78f16121b05204144858"
 
       def install
         bin.install "qbec"
@@ -28,15 +28,15 @@ class Qbec < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/splunk/qbec/releases/download/v0.23.0/qbec-linux-amd64.tar.gz"
-      sha256 "94fc93c5bb9257d2b305343a6ed94d575013ab431b444c0719598996f523445d"
+      url "https://github.com/splunk/qbec/releases/download/v0.24.0/qbec-linux-amd64.tar.gz"
+      sha256 "a5d2ec4e587783b3109c99b324c9d25c11a0cedad17a047a0489469d5b0dcf0b"
       def install
         bin.install "qbec"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/splunk/qbec/releases/download/v0.23.0/qbec-linux-arm64.tar.gz"
-      sha256 "a0b0f10c9317cb7271be5cf5963c399cf81007f1e5cac49071c9fea2802f73c1"
+      url "https://github.com/splunk/qbec/releases/download/v0.24.0/qbec-linux-arm64.tar.gz"
+      sha256 "19f235ee835923a6c7e6ef1ad606d5a05ae3e24bf68f4a28ba77e0568917a857"
       def install
         bin.install "qbec"
       end
